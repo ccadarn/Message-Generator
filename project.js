@@ -23,16 +23,16 @@
 
     // if main phase ... then secondary phrase ...
     if (mainPRandomIndex === 'Today you are') {
-        return `Today you are ${youAreRandomIndex}`
+        return `${mainPRandomIndex} ${youAreRandomIndex}`
     }
     else if (mainPRandomIndex === 'Today everything will be') {
-        return `Today everything will be ${everythingRandomIndex}`
+        return `${mainPRandomIndex} ${everythingRandomIndex}`
     }
     else if (mainPRandomIndex === 'Today will be a') {
-        return `Today will be a ${todayRandomIndex}`
+        return `${mainPRandomIndex} ${todayRandomIndex}`
     }
     else if (mainPRandomIndex === 'Always keep') {
-        return `Always keep ${keepRandomIndex}`
+        return `${mainPRandomIndex} ${keepRandomIndex}`
     }
 }
 
