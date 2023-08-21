@@ -1,30 +1,10 @@
-/*
-You are
-    great
-    super
-    fabulous
-Everething will be
-    great
-    ok
-    super
-Today will be a
-    great day
-    good day
-    super day
-    faboulous day
-Keep
-    trying
-    up the good work
-    learning
 
-    if 'main pe' than 'you are' .... function ..... random
-    */
-
-
-    // function test
+    // function random message
     const phrase = () => {
-    const mainP = ['You are', 'Everything will be', 'Today will be a', 'Keep'];
+        // main phase array
+    const mainP = ['Today you are', 'Today everything will be', 'Today will be a', 'Always keep'];
 
+        // secondary phrases arrays
     const youAre = ['great!', 'super!', 'fabulous!'];
     const everythingWillBe = ['great!', 'ok!', 'super!'];
     const todayWillBeA = ['great day!', 'good day!', 'super day!', 'faboulos day!'];
@@ -41,18 +21,20 @@ Keep
     const todayRandomIndex = todayWillBeA[Math.floor(Math.random() * todayWillBeA.length)];
     const keepRandomIndex = keep[Math.floor(Math.random() * keep.length)];
 
-    if (mainPRandomIndex === 'You are') {
-        return `You are ${youAreRandomIndex}`
+    // if main phase ... then secondary phrase ...
+    if (mainPRandomIndex === 'Today you are') {
+        return `Today you are ${youAreRandomIndex}`
     }
-    else if (mainPRandomIndex === 'Everything will be') {
-        return `Everything will be ${everythingRandomIndex}`
+    else if (mainPRandomIndex === 'Today everything will be') {
+        return `Today everything will be ${everythingRandomIndex}`
     }
     else if (mainPRandomIndex === 'Today will be a') {
         return `Today will be a ${todayRandomIndex}`
     }
-    else if (mainPRandomIndex === 'Keep') {
-        return `Keep ${keepRandomIndex}`
+    else if (mainPRandomIndex === 'Always keep') {
+        return `Always keep ${keepRandomIndex}`
     }
 }
 
+    // test results of the function (it works :))
     console.log(phrase())
